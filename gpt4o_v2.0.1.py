@@ -856,7 +856,6 @@ if __name__ == "__main__":
         openai_api_key="YOUR_API_KEY",  # Replace with your actual key
         cost_codes=cost_codes
     )
-    print("added ssh key +removed api key")
     
     # Run pipeline with your CSV file
     csv_filename = "ironsite_videos.csv"
