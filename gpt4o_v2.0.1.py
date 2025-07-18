@@ -853,7 +853,7 @@ if __name__ == "__main__":
     # Initialize system with your OpenAI API key
     # Make sure to replace with your actual API key and ensure sufficient quota
     system = VideoLabelerSystem(
-        openai_api_key="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",  # Replace with your actual key
+        openai_api_key="YOUR_API_KEY",  # Replace with your actual key
         cost_codes=cost_codes
     )
     
