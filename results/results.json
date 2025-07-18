@@ -1,0 +1,193 @@
+{
+  "evaluation_metrics": {
+    "mAP@0.5": 0.3333333333333333,
+    "mAP@0.75": 0.06944444444444443,
+    "mAP@0.9": 0.0,
+    "temporal_precision": 1.0,
+    "temporal_recall": 1.0,
+    "temporal_f1": 1.0,
+    "temporal_accuracy": 1.0,
+    "temporal_iou": 1.0
+  },
+  "processed_videos": 5,
+  "total_videos": 5,
+  "video_results": [
+    {
+      "video_id": "1",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 125,
+          "label": "Hangers & Supports",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 126,
+          "end_seconds": 294,
+          "label": "Cast Iron",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 150.0,
+          "label": "Hangers & Supports",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 150.0,
+          "end_seconds": 294.7,
+          "label": "Cast Iron",
+          "confidence": 0.85
+        }
+      ],
+      "duration": 294.6666666666667,
+      "processed": true
+    },
+    {
+      "video_id": "2",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 216,
+          "label": "Cast Iron",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 217,
+          "end_seconds": 294,
+          "label": "Phone Time",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 180.0,
+          "label": "Cast Iron",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 294.7,
+          "label": "Phone Time",
+          "confidence": 0.85
+        }
+      ],
+      "duration": 294.73333333333335,
+      "processed": true
+    },
+    {
+      "video_id": "3",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 217,
+          "label": "Cast Iron",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 150.0,
+          "label": "Hangers & Supports",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 150.0,
+          "end_seconds": 294.8,
+          "label": "Cast Iron",
+          "confidence": 0.85
+        }
+      ],
+      "duration": 294.76666666666665,
+      "processed": true
+    },
+    {
+      "video_id": "4",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 145,
+          "label": "Cast Iron",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 146,
+          "end_seconds": 181,
+          "label": "Layout",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 182,
+          "end_seconds": 294,
+          "label": "Hangers & Supports",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 294.8,
+          "label": "Cast Iron",
+          "confidence": 0.95
+        }
+      ],
+      "duration": 294.76666666666665,
+      "processed": true
+    },
+    {
+      "video_id": "5",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 66,
+          "label": "Non-Productive Other",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 67,
+          "end_seconds": 103,
+          "label": "Transit",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 104,
+          "end_seconds": 221,
+          "label": "Phone Time",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 222,
+          "end_seconds": 285,
+          "label": "Transit",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 100.0,
+          "label": "Operating Lift",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 180.0,
+          "label": "Phone Time",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 294.5,
+          "label": "Transit (On Foot)",
+          "confidence": 0.8
+        }
+      ],
+      "duration": 294.53333333333336,
+      "processed": true
+    }
+  ]
+}
