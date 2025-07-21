@@ -18,6 +18,10 @@ from openai import OpenAI
 from urllib.parse import urlparse
 import logging
 from pyrate_limiter import Limiter, Rate
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -850,10 +854,18 @@ if __name__ == "__main__":
     "Layout": "Workers mark or measure areas to plan pipe installation routes using chalk lines, tape measures, or markers", 
     "Underground": "Workers install underground piping systems, typically in trenches or below-grade applications"}
     
-    # Initialize system with your OpenAI API key
-    # Make sure to replace with your actual API key and ensure sufficient quota
+    # Initialize system with OpenAI API key from environment variables
+    openai_api_key = os.getenv('OPENAI_API_KEY')
+    if not openai_api_key:
+        print("❌ OpenAI API key not found!")
+        print("Please:")
+        print("1. Copy .env.example to .env")
+        print("2. Add your OpenAI API key to the .env file")
+        print("3. Make sure python-dotenv is installed: pip3 install python-dotenv")
+        exit(1)
+    
     system = VideoLabelerSystem(
-        openai_api_key="YOUR_API_KEY",  # Replace with your actual key
+        openai_api_key=openai_api_key,
         cost_codes=cost_codes
     )
     
