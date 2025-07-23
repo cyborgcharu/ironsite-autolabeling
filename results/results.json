@@ -1,16 +1,16 @@
 {
   "evaluation_metrics": {
-    "mAP@0.5": 0.16666666666666666,
-    "mAP@0.75": 0.048611111111111105,
-    "mAP@0.9": 0.0,
+    "mAP@0.5": 0.17490570826982033,
+    "mAP@0.75": 0.09816551689820388,
+    "mAP@0.9": 0.018014620207602666,
     "temporal_precision": 1.0,
     "temporal_recall": 1.0,
     "temporal_f1": 1.0,
     "temporal_accuracy": 1.0,
     "temporal_iou": 1.0
   },
-  "processed_videos": 5,
-  "total_videos": 5,
+  "processed_videos": 32,
+  "total_videos": 36,
   "video_results": [
     {
       "video_id": "1",
@@ -31,15 +31,9 @@
       "predictions": [
         {
           "start_seconds": 0.0,
-          "end_seconds": 150.0,
-          "label": "Hangers & Supports",
-          "confidence": 0.9
-        },
-        {
-          "start_seconds": 150.0,
           "end_seconds": 294.7,
-          "label": "Cast Iron",
-          "confidence": 0.85
+          "label": "Hangers & Supports",
+          "confidence": 0.95
         }
       ],
       "duration": 294.6666666666667,
@@ -64,15 +58,15 @@
       "predictions": [
         {
           "start_seconds": 0.0,
-          "end_seconds": 200.0,
+          "end_seconds": 220.0,
           "label": "Cast Iron",
-          "confidence": 0.95
+          "confidence": 0.9
         },
         {
-          "start_seconds": 200.0,
+          "start_seconds": 220.0,
           "end_seconds": 294.7,
           "label": "Phone Time",
-          "confidence": 0.9
+          "confidence": 0.85
         }
       ],
       "duration": 294.73333333333335,
@@ -169,15 +163,15 @@
       "predictions": [
         {
           "start_seconds": 0.0,
-          "end_seconds": 120.0,
-          "label": "Phone Time",
-          "confidence": 0.9
-        },
-        {
-          "start_seconds": 120.0,
-          "end_seconds": 200.0,
+          "end_seconds": 100.0,
           "label": "Operating Lift",
           "confidence": 0.85
+        },
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 200.0,
+          "label": "Phone Time",
+          "confidence": 0.9
         },
         {
           "start_seconds": 200.0,
@@ -187,6 +181,1145 @@
         }
       ],
       "duration": 294.53333333333336,
+      "processed": true
+    },
+    {
+      "video_id": "6",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 66,
+          "label": "Non-Productive Other",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 67,
+          "end_seconds": 103,
+          "label": "Transit",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 104,
+          "end_seconds": 221,
+          "label": "Phone Time",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 222,
+          "end_seconds": 294,
+          "label": "Transit",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 100.0,
+          "label": "Operating Lift",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 200.0,
+          "label": "Phone Time",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 294.5,
+          "label": "Transit (On Foot)",
+          "confidence": 0.8
+        }
+      ],
+      "duration": 294.53333333333336,
+      "processed": true
+    },
+    {
+      "video_id": "7",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 16,
+          "label": "Planning & Logistics",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 17,
+          "end_seconds": 184,
+          "label": "Transport",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 185,
+          "end_seconds": 294,
+          "label": "Cast Iron",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 100.0,
+          "label": "Transport",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 200.0,
+          "label": "Hangers & Supports",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 294.6,
+          "label": "Layout",
+          "confidence": 0.88
+        }
+      ],
+      "duration": 294.56666666666666,
+      "processed": true
+    },
+    {
+      "video_id": "8",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 34,
+          "label": "PVC",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 35,
+          "end_seconds": 156,
+          "label": "Planning & Logistics",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 157,
+          "end_seconds": 185,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 186,
+          "end_seconds": 294,
+          "label": "Cast Iron",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 100.0,
+          "label": "PVC",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 200.0,
+          "label": "Transit (On Foot)",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 294.8,
+          "label": "Hangers & Supports",
+          "confidence": 0.88
+        }
+      ],
+      "duration": 294.8,
+      "processed": true
+    },
+    {
+      "video_id": "9",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 87,
+          "label": "Cast Iron",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 88,
+          "end_seconds": 294,
+          "label": "Discussion",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [],
+      "duration": 294.8,
+      "processed": false
+    },
+    {
+      "video_id": "10",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 20,
+          "label": "Transport",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 21,
+          "end_seconds": 67,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 68,
+          "end_seconds": 194,
+          "label": "Planning & Logistics",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 195,
+          "end_seconds": 234,
+          "label": "Cast Iron",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 235,
+          "end_seconds": 286,
+          "label": "Planning & Logistics",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 287,
+          "end_seconds": 294,
+          "label": "Cast Iron",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 100.0,
+          "label": "Transit (On Foot)",
+          "confidence": 0.8
+        },
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 200.0,
+          "label": "Discussion",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 294.7,
+          "label": "Hangers & Supports",
+          "confidence": 0.9
+        }
+      ],
+      "duration": 294.6666666666667,
+      "processed": true
+    },
+    {
+      "video_id": "11",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 294,
+          "label": "Cast Iron",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 150.0,
+          "label": "Hangers & Supports",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 150.0,
+          "end_seconds": 294.7,
+          "label": "Cast Iron",
+          "confidence": 0.9
+        }
+      ],
+      "duration": 294.7,
+      "processed": true
+    },
+    {
+      "video_id": "12",
+      "ground_truth": [],
+      "predictions": [],
+      "duration": 0.0,
+      "processed": false
+    },
+    {
+      "video_id": "13",
+      "ground_truth": [],
+      "predictions": [],
+      "duration": 0.0,
+      "processed": false
+    },
+    {
+      "video_id": "14",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 250,
+          "label": "Phone Time",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 251,
+          "end_seconds": 282,
+          "label": "Planning & Logistics",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 282.2,
+          "label": "Phone Time",
+          "confidence": 0.95
+        }
+      ],
+      "duration": 282.23333333333335,
+      "processed": true
+    },
+    {
+      "video_id": "15",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 294,
+          "label": "Planning & Logistics",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 100.0,
+          "label": "Planning & Logistics",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 200.0,
+          "label": "Hangers & Supports",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 294.7,
+          "label": "Transport",
+          "confidence": 0.88
+        }
+      ],
+      "duration": 294.73333333333335,
+      "processed": true
+    },
+    {
+      "video_id": "16",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 95,
+          "label": "Planning & Logistics",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 96,
+          "end_seconds": 294,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 100.0,
+          "label": "Operating Lift",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 200.0,
+          "label": "Transit (On Foot)",
+          "confidence": 0.8
+        },
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 294.3,
+          "label": "Preparation",
+          "confidence": 0.75
+        }
+      ],
+      "duration": 294.3,
+      "processed": true
+    },
+    {
+      "video_id": "17",
+      "ground_truth": [],
+      "predictions": [],
+      "duration": 0.0,
+      "processed": false
+    },
+    {
+      "video_id": "18",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 19,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 20,
+          "end_seconds": 294,
+          "label": "Transport",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 120.0,
+          "label": "Hangers & Supports",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 120.0,
+          "end_seconds": 200.0,
+          "label": "Transit (On Foot)",
+          "confidence": 0.8
+        },
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 294.6,
+          "label": "Pack/Unpack In Place",
+          "confidence": 0.75
+        }
+      ],
+      "duration": 294.6333333333333,
+      "processed": true
+    },
+    {
+      "video_id": "19",
+      "ground_truth": [],
+      "predictions": [],
+      "duration": 0.0,
+      "processed": false
+    },
+    {
+      "video_id": "20",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 294,
+          "label": "Cast Iron",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 150.0,
+          "label": "Hangers & Supports",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 150.0,
+          "end_seconds": 294.6,
+          "label": "Cast Iron",
+          "confidence": 0.9
+        }
+      ],
+      "duration": 294.6333333333333,
+      "processed": true
+    },
+    {
+      "video_id": "21",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 294,
+          "label": "Cast Iron",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [],
+      "duration": 294.76666666666665,
+      "processed": false
+    },
+    {
+      "video_id": "22",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 15,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 16,
+          "end_seconds": 46,
+          "label": "Discussion",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 47,
+          "end_seconds": 106,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 107,
+          "end_seconds": 125,
+          "label": "Discussion",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 62.6,
+          "label": "Transit (On Foot)",
+          "confidence": 0.8
+        },
+        {
+          "start_seconds": 62.6,
+          "end_seconds": 125.2,
+          "label": "Pack/Unpack In Place",
+          "confidence": 0.85
+        }
+      ],
+      "duration": 125.23333333333333,
+      "processed": true
+    },
+    {
+      "video_id": "23",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 58,
+          "label": "Phone Time",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 59,
+          "end_seconds": 138,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 139,
+          "end_seconds": 166,
+          "label": "Discussion",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 167,
+          "end_seconds": 240,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 241,
+          "end_seconds": 278,
+          "label": "Planning & Logistics",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 279,
+          "end_seconds": 294,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 62.6,
+          "label": "Transit (On Foot)",
+          "confidence": 0.8
+        },
+        {
+          "start_seconds": 62.6,
+          "end_seconds": 94.0,
+          "label": "Transport",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 94.0,
+          "end_seconds": 125.2,
+          "label": "Pack/Unpack In Place",
+          "confidence": 0.9
+        }
+      ],
+      "duration": 125.23333333333333,
+      "processed": true
+    },
+    {
+      "video_id": "24",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 123,
+          "label": "Planning & Logistics",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 124,
+          "end_seconds": 187,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 188,
+          "end_seconds": 231,
+          "label": "Discussion",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 232,
+          "end_seconds": 294,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 100.0,
+          "label": "Transit (On Foot)",
+          "confidence": 0.8
+        },
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 200.0,
+          "label": "Discussion",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 294.8,
+          "label": "Firewatch",
+          "confidence": 0.9
+        }
+      ],
+      "duration": 294.76666666666665,
+      "processed": true
+    },
+    {
+      "video_id": "25",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 27,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 28,
+          "end_seconds": 58,
+          "label": "Planning & Logistics",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 59,
+          "end_seconds": 117,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 118,
+          "end_seconds": 164,
+          "label": "Phone Time",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 165,
+          "end_seconds": 217,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 218,
+          "end_seconds": 294,
+          "label": "Planning & Logistics",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 132.0,
+          "label": "Transit (On Foot)",
+          "confidence": 0.8
+        },
+        {
+          "start_seconds": 132.0,
+          "end_seconds": 147.0,
+          "label": "Phone Time",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 147.0,
+          "end_seconds": 294.5,
+          "label": "Planning & Logistics",
+          "confidence": 0.9
+        }
+      ],
+      "duration": 294.53333333333336,
+      "processed": true
+    },
+    {
+      "video_id": "26",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 294,
+          "label": "Discussion",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 150.0,
+          "label": "Phone Time",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 150.0,
+          "end_seconds": 294.8,
+          "label": "Break",
+          "confidence": 0.85
+        }
+      ],
+      "duration": 294.76666666666665,
+      "processed": true
+    },
+    {
+      "video_id": "27",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 50,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 51,
+          "end_seconds": 236,
+          "label": "Discussion",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 237,
+          "end_seconds": 278,
+          "label": "Phone Time",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 279,
+          "end_seconds": 294,
+          "label": "Planning & Logistics",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 100.0,
+          "label": "Transit (On Foot)",
+          "confidence": 0.8
+        },
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 180.0,
+          "label": "Break",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 240.0,
+          "label": "Phone Time",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 240.0,
+          "end_seconds": 294.8,
+          "label": "Transit (On Foot)",
+          "confidence": 0.8
+        }
+      ],
+      "duration": 294.8,
+      "processed": true
+    },
+    {
+      "video_id": "28",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 70,
+          "label": "Discussion",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 71,
+          "end_seconds": 87,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 88,
+          "end_seconds": 148,
+          "label": "Planning & Logistics",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 149,
+          "end_seconds": 294,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 120.0,
+          "label": "Discussion",
+          "confidence": 0.8
+        },
+        {
+          "start_seconds": 120.0,
+          "end_seconds": 294.6,
+          "label": "Transit (On Foot)",
+          "confidence": 0.85
+        }
+      ],
+      "duration": 294.56666666666666,
+      "processed": true
+    },
+    {
+      "video_id": "29",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 24,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 25,
+          "end_seconds": 294,
+          "label": "Discussion",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 60.0,
+          "label": "Operating Lift",
+          "confidence": 0.8
+        },
+        {
+          "start_seconds": 60.0,
+          "end_seconds": 294.8,
+          "label": "Discussion",
+          "confidence": 0.9
+        }
+      ],
+      "duration": 294.76666666666665,
+      "processed": true
+    },
+    {
+      "video_id": "30",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 209,
+          "label": "Transit (On Foot)",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 210,
+          "end_seconds": 269,
+          "label": "Phone Time",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 270,
+          "end_seconds": 294,
+          "label": "Nothing",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 100.0,
+          "label": "Transit (On Foot)",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 200.0,
+          "label": "Preparation",
+          "confidence": 0.8
+        },
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 250.0,
+          "label": "Phone Time",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 250.0,
+          "end_seconds": 294.5,
+          "label": "Discussion",
+          "confidence": 0.75
+        }
+      ],
+      "duration": 294.53333333333336,
+      "processed": true
+    },
+    {
+      "video_id": "31",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 294,
+          "label": "Phone Time",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 60.0,
+          "label": "Transit (On Foot)",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 60.0,
+          "end_seconds": 120.0,
+          "label": "Phone Time",
+          "confidence": 0.95
+        },
+        {
+          "start_seconds": 120.0,
+          "end_seconds": 180.0,
+          "label": "Transit (On Foot)",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 240.0,
+          "label": "Phone Time",
+          "confidence": 0.95
+        },
+        {
+          "start_seconds": 240.0,
+          "end_seconds": 294.6,
+          "label": "Transit (On Foot)",
+          "confidence": 0.9
+        }
+      ],
+      "duration": 294.56666666666666,
+      "processed": true
+    },
+    {
+      "video_id": "32",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 106,
+          "label": "Phone Time",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 107,
+          "end_seconds": 199,
+          "label": "Transit",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 200,
+          "end_seconds": 294,
+          "label": "Phone Time",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 60.0,
+          "label": "Framing (Metal)",
+          "confidence": 0.8
+        },
+        {
+          "start_seconds": 60.0,
+          "end_seconds": 180.0,
+          "label": "Phone Time",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 180.0,
+          "end_seconds": 240.0,
+          "label": "Transit (On Foot)",
+          "confidence": 0.75
+        },
+        {
+          "start_seconds": 240.0,
+          "end_seconds": 294.6,
+          "label": "Framing (Metal)",
+          "confidence": 0.8
+        }
+      ],
+      "duration": 294.6,
+      "processed": true
+    },
+    {
+      "video_id": "33",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 243,
+          "label": "Nothing",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 243.5,
+          "label": "Hangers & Supports",
+          "confidence": 0.9
+        }
+      ],
+      "duration": 243.53333333333333,
+      "processed": true
+    },
+    {
+      "video_id": "34",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 239,
+          "label": "Pipe Installation - Cast Iron",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 240,
+          "end_seconds": 294,
+          "label": "Pipe Installation - Cast Iron",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 147.4,
+          "label": "PVC",
+          "confidence": 0.9
+        },
+        {
+          "start_seconds": 147.4,
+          "end_seconds": 294.8,
+          "label": "Transit (On Foot)",
+          "confidence": 0.85
+        }
+      ],
+      "duration": 294.8,
+      "processed": true
+    },
+    {
+      "video_id": "35",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 106,
+          "label": "Pipe Installation - Cast Iron",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 107,
+          "end_seconds": 137,
+          "label": "Transit",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 138,
+          "end_seconds": 294,
+          "label": "Pipe Installation - Cast Iron",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 294.7,
+          "label": "Hangers & Supports",
+          "confidence": 0.95
+        }
+      ],
+      "duration": 294.73333333333335,
+      "processed": true
+    },
+    {
+      "video_id": "36",
+      "ground_truth": [
+        {
+          "start_seconds": 0,
+          "end_seconds": 134,
+          "label": "Planning / Logistics",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 135,
+          "end_seconds": 150,
+          "label": "Transit",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 151,
+          "end_seconds": 212,
+          "label": "Materials - Transport",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 213,
+          "end_seconds": 264,
+          "label": "Discussion",
+          "confidence": 1.0
+        },
+        {
+          "start_seconds": 265,
+          "end_seconds": 294,
+          "label": "Transit",
+          "confidence": 1.0
+        }
+      ],
+      "predictions": [
+        {
+          "start_seconds": 0.0,
+          "end_seconds": 100.0,
+          "label": "Transit (On Foot)",
+          "confidence": 0.8
+        },
+        {
+          "start_seconds": 100.0,
+          "end_seconds": 200.0,
+          "label": "Trash Transport",
+          "confidence": 0.85
+        },
+        {
+          "start_seconds": 200.0,
+          "end_seconds": 294.6,
+          "label": "Discussion",
+          "confidence": 0.75
+        }
+      ],
+      "duration": 294.6333333333333,
       "processed": true
     }
   ]
